@@ -1,3 +1,13 @@
+body {
+  font-family: sans-serif;
+  margin: 0px;
+}
+
+a {
+  color: cornflowerblue;
+  text-decoration: none;
+}
+
 .container {
   max-width: 700px;
   margin: 0px auto;
@@ -5,6 +15,13 @@
 
 .heading {
   text-align: center;
+  font-size: 30px;
+}
+
+.about-me {
+  padding: 20px;
+  border: 1px solid silver;
+  margin: 20px;
 }
 
 .image-wrapper {
@@ -15,6 +32,10 @@
 #profile {
   display: block;
   width: 100%;
+}
+
+.post {
+  margin: 20px;
 }
 
 /* class selector */

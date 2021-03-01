@@ -1,0 +1,24 @@
+.container {
+  max-width: 700px;
+  margin: 0px auto;
+}
+
+.heading {
+  text-align: center;
+}
+
+.image-wrapper {
+  max-width: 300px;
+  margin: 0px auto;
+}
+
+#profile {
+  display: block;
+  width: 100%;
+}
+
+/* class selector */
+/* is for many elements */
+
+/* id selector */
+/* is for one specific element */

@@ -1,0 +1,43 @@
+nav {
+  height: 60px;
+  background: rgb(68, 20, 129);
+  display: flex;
+  align-items: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+.logo-container {
+  width: 70%;
+}
+
+.logo-container a {
+  margin-left: 10px;
+}
+
+.logo-container a i {
+  font-size: 30px;
+}
+
+.buttons-container {
+  width: 30%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.buttons-container a {
+  min-width: fit-content;
+  padding: 20px;
+}
+
+@media only screen and (max-width: 700px) {
+  .logo-container {
+    width: 50%;
+  }
+  .buttons-container {
+    width: 50%;
+  }
+}

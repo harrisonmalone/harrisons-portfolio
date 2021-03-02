@@ -28,3 +28,13 @@
 .graphic {
   width: 500px;
 }
+
+@media only screen and (max-width: 500px) {
+  .about-me {
+    padding: 0px;
+  }
+  .graphic {
+    width: 90%;
+    display: block;
+  }
+}

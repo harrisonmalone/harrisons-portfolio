@@ -1,8 +1,19 @@
 body {
   margin: 0px;
   font-family: 'Lora', serif;
+  color: white;
 }
 
 h1, h2 {
   font-family: 'RocknRoll One', sans-serif;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  height: 90vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px;
 }

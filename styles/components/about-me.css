@@ -1,0 +1,32 @@
+.description {
+  width: 45%;
+}
+
+.image-container {
+  margin: 10px 0px;
+  width: 45%;
+}
+
+.image-container img {
+  width: 100%;
+  filter: none;
+}
+
+@media only screen and (max-width: 700px) {
+  .container {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .description {
+    width: 100%;
+  }
+  .image-container {
+    width: 60%;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .image-container {
+    width: 100%;
+  }
+}

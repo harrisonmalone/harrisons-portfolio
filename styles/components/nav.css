@@ -13,6 +13,10 @@ nav a {
   margin: 0px 5px;
 }
 
+nav a:hover {
+  border-bottom: 1px solid white;
+}
+
 .nav-links {
   margin-left: 20px;
   display: flex;
@@ -46,6 +50,10 @@ nav a {
   text-decoration: none;
   color: black;
 }
+
+.hamburger-links li a:hover {
+  border-bottom: 1px solid black;
+} 
 
 @media only screen and (max-width: 500px) {
   .blog-projects {

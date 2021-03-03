@@ -1,0 +1,31 @@
+.projects-container h1 {
+  color: black;
+  align-self: flex-start;
+  margin: 10px;
+}
+
+.project {
+  height: 300px;
+  color: black;
+  display: flex;
+}
+
+.project img {
+  height: 100%;
+}
+
+.project-description {
+  display: flex;
+  align-items: center;
+}
+
+@media only screen and (max-width: 700px) {
+  .project {
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+  }
+  .project-description {
+    align-items: center;
+  }
+}

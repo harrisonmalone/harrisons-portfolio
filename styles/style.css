@@ -2,3 +2,6 @@
 @import "hamburger/style.css";
 @import "components/nav.css";
 @import "components/main.css";
+@import "components/footer.css";
+@import "components/about-me.css";
+@import "components/project.css";

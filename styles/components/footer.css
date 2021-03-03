@@ -1,12 +1,13 @@
 footer {
-  height: 40px;
+  height: 50%;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: flex-end;
+  color: white;
   align-items: center;
+  font-size: 10px;
 }
 
 footer a {
-  margin: 0px 10px;
-  color: rgb(68, 20, 129);
-  text-decoration: none;
+  color: white;
 }

@@ -1,43 +1,68 @@
 nav {
-  height: 60px;
-  background: rgb(68, 20, 129);
+  height: 10vh;
+  background: rgb(32, 30, 30);
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 nav a {
   color: white;
   text-decoration: none;
+  font-family: 'RocknRoll One', sans-serif;
+  margin: 0px 5px;
 }
 
-.logo-container {
-  width: 70%;
+nav a:hover {
+  border-bottom: 1px solid white;
 }
 
-.logo-container a {
-  margin-left: 10px;
-}
-
-.logo-container a i {
-  font-size: 30px;
-}
-
-.buttons-container {
-  width: 30%;
+.nav-links {
+  margin-left: 20px;
   display: flex;
-  justify-content: flex-end;
 }
 
-.buttons-container a {
-  min-width: fit-content;
-  padding: 20px;
+.social-links {
+  margin-right: 20px;
 }
 
-@media only screen and (max-width: 700px) {
-  .logo-container {
-    width: 50%;
+.hamburger {
+  display: none;
+}
+
+.hamburger-links {
+  display: none;
+  position: fixed;
+  top: 10vh;
+  z-index: 2;
+  background: white;
+  width: 100vw;
+  margin: 0px;
+  padding: 0px;
+}
+
+.hamburger-links li {
+  text-align: center;
+  margin: 10px 0px;
+}
+
+.hamburger-links li a {
+  text-decoration: none;
+  color: black;
+}
+
+.hamburger-links li a:hover {
+  border-bottom: 1px solid black;
+} 
+
+@media only screen and (max-width: 500px) {
+  .blog-projects {
+    display: none;
   }
-  .buttons-container {
-    width: 50%;
+  .social-links {
+    display: none;
+  }
+  .hamburger {
+    display: block;
   }
 }

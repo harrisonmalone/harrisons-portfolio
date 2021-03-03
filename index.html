@@ -1,69 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Harrison Malone's Awesome Portfolio</title>
-  <script src="https://kit.fontawesome.com/97409e226c.js" crossorigin="anonymous"></script>
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./styles/style.css">
-</head>
-<body>
-  <nav>
-    <div class="logo-container">
-      <a href=""><i class="fas fa-dog"></i></a>
-    </div>
-    <div class="buttons-container">
-      <a href="">About me</a>
-      <a href="">Contact</a>
-    </div>
-  </nav>
-  <main>
-    <div class="about-me">
-      <h1>Harrison Malone | Developer</h1>
-      <p>Hi, I'm Harrison. I currently work at CoderAcademy where I've mentored around 100 students leading classes and assisting with content development. Here are my current projects.</p>
-      <img src="./me.jpeg" alt="profile">
-    </div>
-    <div class="graphic-container">
-      <img class="graphic" src="./graphic.svg" alt="graphic of computer">
-    </div>
-  </main>
-  <div class="skills">
-    <div class="frontend-skills skill">
-      <h2>Frontend Skills</h2>
-      <ul>
-        <li>React</li>
-        <li>Vanilla JavaScript</li>
-        <li>CSS</li>
-        <li>SCSS</li>
-        <li>Styled Components</li>
-      </ul>
-    </div>
-    <div class="backend-skills skill">
-      <h2>Backend Skills</h2>
-      <ul>
-        <li>Ruby</li>
-        <li>Rails</li>
-        <li>PostgreSQL</li>
-        <li>Node</li>
-        <li>Express.js</li>
-      </ul>
-    </div>
-    <div class="design-skills skill">
-      <h2>Design skills</h2>
-      <ul>
-        <li>Figma</li>
-        <li>Wire framing</li>
-      </ul>
-    </div>
-  </div>
-  <footer>
-    <a href="">Twitter</a>
-    <a href="">GitHub</a>
-    <a href="">Instagram</a>
-  </footer>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Harrison Malone's Awesome Portfolio</title>
+    <script
+      src="https://kit.fontawesome.com/97409e226c.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <nav>
+      <section class="nav-links">
+        <div class="home">
+          <a href="">Home</a>
+          <a href="">About Me</a>
+        </div>
+        <div class="blog-projects">
+          <a href="">Projects</a>
+          <a href="">Blog</a>
+        </div>
+      </section>
+      <section class="social-links">
+        <a href="">LinkedIn</a>
+        <a href="">GitHub</a>
+      </section>
+      <button class="hamburger hamburger--squeeze button-outline" type="button">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
+    </nav>
+    <ul class="hamburger-links">
+      <li><a href="">Projects</a></li>
+      <li><a href="">Blog</a></li>
+      <li><a href="">LinkedIn</a></li>
+      <li><a href="">GitHub</a></li>
+    </ul>
+    <main>
+      <div class="title-container">
+        <h1>Harrison Malone</h1>
+        <h3>Software Engineer</h3>
+      </div>
+    </main>
+    <script>
+      const hamburger = document.querySelector('.hamburger')
+      const links = document.querySelector('.hamburger-links')
+      hamburger.addEventListener('click', function () {
+        hamburger.classList.toggle('is-active')
+        const isActive = hamburger.classList.contains('is-active')
+        if (isActive) {
+          links.style.display = 'block'
+        } else {
+          links.style.display = 'none'
+        }
+      })
+    </script>
+  </body>
 </html>

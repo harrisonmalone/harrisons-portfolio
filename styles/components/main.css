@@ -1,0 +1,28 @@
+main {
+  background: url("../../divya-agrawal-nhsrIwaz73M-unsplash.jpg");
+  height: 90vh;
+  background-position: left;
+  background-size: cover;
+  filter: grayscale(0.5);
+}
+
+main .title-container {
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+main h1 {
+  margin: 0px;
+  font-size: 70px;
+  color: rgb(61, 55, 55);
+  text-align: center;
+}
+
+@media only screen and (max-width: 750px) {
+  main h1 {
+    font-size: 40px;
+  }
+}
